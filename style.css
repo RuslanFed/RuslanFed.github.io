@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  color: #333;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Raleway", Arial, sans-serif;
+  /*overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;*/
+  background-color: #FFFFFF; 
+  
+}
+a {
+	text-decoration: none;
+	color: #969696;
+}
+#LinksOnThePages {
+	padding: 15px;
+	
+}
+
+#LinksOnThePages:hover {
+	background: #E0E0E0;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+#LinksOnThePages:active {
+	background: #F6F6F6;
+}
+.hrefsWords {                    /*border header */
+	border:1px solid #ccc;
+	padding-bottom: 9px;
+	padding-top: 9px;
+	margin: auto;
+	width: 380px;
+	margin-top: 50px;
+}
+.wrapper {
+	overflow: hidden;
+}
+
+.wrapper {
+	margin: auto;
+	width: 1331px;
+}
+
+
+
+/*для прибиття футера до низу */
+body {
+	height: 100%;
+}
+html {
+	position: relative;
+	min-height: 100%;
+}
+.conteiner_content {
+	padding-bottom: 150px;
+}
+.footer {
+	height: 60px;
+	/*background-color: #F1F1F1;*/
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1.5px solid #F1F1F1;
+
+}
+
+.footerWord  {
+	padding-top: 10px;
+}
+
+
+a {
+  text-decoration: none;
+  color: #de6551;
+  outline: none;
+}
+
+/*для прибиття футера до низу   end */
+
+/*для фото*/
+
+.L1,.R1,.L2,.R2,.L3,.R3{
+	display: inline-block;
+}
+/*.L1,.L3,.R2{background-color:#EEE;}*/
+ .L1,.R1,.L2,.R2,.L3,.R3{
+ 	width:100%;
+ }
+ .portfolioPhoto_right{
+ 	float:right;
+ 	width:50%;
+ }
+ .portfolioPhoto_left{
+ 	float:left;
+ 	width:50%;
+ 	margin-right: -55px;
+ }
+
+.L1,.L2,.L3 {
+	padding-right: 5px;
+	padding-bottom: 10px;
+}
+.R1,.R2,.R3 {
+	padding-left: -5px;
+	padding-bottom: 10px;
+}
+
+/*end для фото*/
+
+/* style for about*/
+.leftimg {
+	float: left;
+	padding: 7px 70px 7px 0;
+}
+
+
+.wrapper_about {
+	overflow: hidden;
+}
+
+.wrapper_about {
+	margin: auto;
+	width: 1000px;
+	height: 800px;
+}
+
+
+.contact {
+	overflow: hidden;
+}
+
+.contact {
+	margin: auto;
+	width: 850px;
+	
+	text-align: center;
+}
+
+.tel {
+  background-image: url("tel.png");
+  position: absolute;
+  /*left: 98px;*/
+  top: 761px;
+  width: 55px;
+  height: 49px;
+  z-index: 10;
+  margin-left: -502px;
+
+}
+.phone {
+  font-size: 22px;
+  font-family: "Poor Richard";
+  color: rgb(71, 65, 65);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  /*left: 195.437px;*/
+  top: 775.1px;
+  z-index: 12;
+
+}
+.skype {
+  background-image: url("skype.png");
+  position: absolute;
+  /*left: 101px;*/
+  top: 847px;
+  width: 51px;
+  height: 51px;
+  z-index: 13;
+  margin-left: -502px;
+}
+.fedotov_ruslan {
+  font-size: 22px;
+  font-family: "Pristina";
+  color: rgb(71, 65, 65);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  /*left: 194.135px;*/
+  top: 865.286px;
+  z-index: 14;
+}
+.email {
+  background-image: url("email.png");
+  position: absolute;
+  /*left: 101px;*/
+  top: 935px;
+  width: 45px;
+  height: 52px;
+  z-index: 15;
+  margin-left: -502px;
+}
+.emailTEXT {
+  font-size: 22px;
+  font-family: "Pristina";
+  color: rgb(71, 65, 65);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  /*left: 194.109px;*/
+  top: 950.286px;
+  z-index: 16;
+}
+.map {
+  
+  position: absolute;
+  /*left: 625px;*/
+  /*top: 1050px;*/
+  width: 531px;
+  height: 319px;
+  z-index: 18;
+
+  margin-top: -260px;
+
+}
+
+/*end style for about*/
+
+/*for resume page*/
+.resume_word {
+  float: left;
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+.headresume_word {
+  width: 700px;
+  margin: 0 auto;
+
+}
+
+. {
+  background-image: url("круг.png");
+  position: absolute;
+  left: 177px;
+  top: 537px;
+  width: 110px;
+  height: 110px;
+  z-index: 5;
+}
+
+.text {
+  font-size: 14px;
+  font-family: "Century Schoolbook";
+  color: rgb(71, 65, 65);
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 555.986px;
+  top: 247.546px;
+  z-index: 18;
+  width: 400px;
+}
+
+
+
+/*style kolonka */
+
+.head {
+  overflow: hidden;
+  width: 600px;
+  margin: 0 auto;
+}
+.imagegoal {
+  float: left;
+  width: 200px;
+}
+.textgoal {
+  width: 400px;
+  text-align: center;
+  margin: 0px 100px 0px 200px;
+}
+.imgtext {
+  float: right;
+  width: 200px;
+}
+
+/*style kolonka end */
+/* END for resume page*/
