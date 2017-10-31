@@ -14,6 +14,8 @@
 
 <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> <!-- google fonts-->
 
+<link rel="stylesheet" href="form contact/css/contact-form.css">
+
       <style>
       body,h1 {font-family: "Raleway", Arial, sans-serif}
       h1 {letter-spacing: 6px}
@@ -47,6 +49,57 @@
             <div class="conteiner_content">
 
                     <p class="sorry-text">Извините за неудобства,<br><br> данная страница сейчас в разработке и появится в скором времени.</p>
+
+
+                    <!-- Wrapper -->
+  <div id="slideit">
+    <!-- Open/close buttons -->
+    <input id="open-item" name="forms" type="radio" />
+    <input id="close-item" name="forms" type="radio" checked="checked" />
+    <!-- Open label -->
+    <label for="open-item" class="open">Contact us</label>
+    <section>
+      <!-- Close label -->
+      <label for="close-item" class="close">&times;</label>
+      <!-- Heading -->
+      <span class="title">Contact us</span>
+      <!-- Info text and form elements -->
+      <div class="wrap">
+        <!-- Info text -->
+        <p class="info">Если у Вас возникли вопросы или предложения, напишите мне и я отвечу в кратчайшее время!</p>
+        <!-- Form -->
+        <form name="contact" id="contact">
+          <div class="field">
+            <select name="subject" id="subject" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+              <option value="" default="default" selected="selected" disabled="disabled">Цель</option>
+              <option value="1">Вопрос</option>
+              <option value="2">Предложение</option>
+              <option value="3">Жалоба</option>
+              <option value="4">Нашли ошибку</option>
+            </select>
+            <div id="select-arrow"></div>
+            <svg id="select-arrow-svg">
+            <span class="tip">Выберите цель</span>
+          </div>
+          <div class="field">
+            <input name="name" placeholder="Имя" type="text" id="name" required />
+            <span class="tip">Введите свое имя</span>
+          </div>
+          <div class="field">
+            <input name="email" placeholder="Email" type="email" id="email" required />
+            <span class="tip">Введите свой Email</span>
+          </div>
+          <div class="field">
+            <textarea name="message" placeholder="Текст" id="message" required /></textarea>
+            <span class="tip">Введите здесь свое обращение</span>
+          </div>
+          <input type="submit" value="Send" class="send" form="contact" />
+          <input type="reset" value="&#8226; Reset form" class="reset">
+        </form>
+      </div>
+    </section>
+  </div>
+  <!-- / Wrapper -->
 
 
                                                             
