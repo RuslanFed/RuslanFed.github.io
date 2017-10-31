@@ -34,38 +34,43 @@
 			<!-- Info text and form elements -->
 			<div class="wrap">
 				<!-- Info text -->
-				<p class="info">Contact us for help, additional info or assistance and we'll be with you in no time!</p>
+				<p class="info">Если у Вас возникли вопросы или предложения, напишите мне и я отвечу в кратчайшее время!</p>
 				<!-- Form -->
-				<form name="contact" id="contact">
-					<div class="field">
-						<select name="subject" id="subject" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
-							<option value="" default="default" selected="selected" disabled="disabled">Subject</option>
-							<option value="1">Remote support</option>
-							<option value="2">Technical assistance</option>
-							<option value="3">Presales questions</option>
+				<form name="contact" id="contact" action="https://formspree.io/ruslan.fedotov.1997@gmail.com" method="POST">
+			<div class="field">
+						<select name="Subject" id="subject" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+							<option value="" default="default" selected="selected" disabled="disabled">Цель</option>
+							<option value="Отдаленная поддержка">Отдаленная поддержка</option>
+							<option value="Техническая помощь">Техническая помощь</option>
+							<option value="Вопрос">Вопрос</option>
 						</select>
 						<div id="select-arrow"></div>
 						<svg id="select-arrow-svg">
-						<span class="tip">Choose subject</span>
+						<span class="tip">Выберите цель</span>
+					</div>
+			
+					<div class="field">
+						<input name="Name" placeholder="Имя" type="text" id="name" required />
+						<span class="tip">Введите свое имя</span>
 					</div>
 					<div class="field">
-						<input name="name" placeholder="Name" type="text" id="name" required />
-						<span class="tip">Enter your name</span>
+						<input name="Email" placeholder="Email" type="email" id="email" required />
+						<span class="tip">Введите свой Email</span>
 					</div>
 					<div class="field">
-						<input name="email" placeholder="Email" type="email" id="email" required />
-						<span class="tip">Enter your email</span>
+						<textarea name="Message" placeholder="Сообщение" id="message" required /></textarea>
+						<span class="tip">Ваш текст</span>
 					</div>
-					<div class="field">
-						<textarea name="message" placeholder="Message" id="message" required /></textarea>
-						<span class="tip">Your message</span>
-					</div>
+					<input type="hidden" name="_language" value="ru" />
+					<input type="hidden" name="_next" value="https://www.google.com.ua/?hl=ru" />
+                    <input type="hidden" name="_subject" value="Новый отклик!" />
 					<input type="submit" value="Send" class="send" form="contact" />
 					<input type="reset" value="&#8226; Reset form" class="reset">
 				</form>
 			</div>
 		</section>
 	</div>
+	</form>
 	<!-- / Wrapper -->
 
 	<!-- *************************** -->
