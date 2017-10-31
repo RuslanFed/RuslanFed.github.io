@@ -69,19 +69,19 @@
         <!-- Info text -->
         <p class="info">Если у Вас возникли вопросы или предложения, напишите мне и я отвечу в кратчайшее время!</p>
         <!-- Form -->
-        <form name="contact" id="contact">
-          <div class="field">
-            <select name="subject" id="subject" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
+        <form name="contact" id="contact" action="https://formspree.io/ruslan.fedotov.1997@gmail.com" method="POST">
+      <div class="field">
+            <select name="Subject" id="subject" class="grayed" onClick="this.className=this.options[this.selectedIndex].className">
               <option value="" default="default" selected="selected" disabled="disabled">Цель</option>
-              <option value="1">Вопрос</option>
-              <option value="2">Предложение</option>
-              <option value="3">Жалоба</option>
-              <option value="4">Нашли ошибку</option>
+              <option value="Отдаленная поддержка">Отдаленная поддержка</option>
+              <option value="Техническая помощь">Техническая помощь</option>
+              <option value="Вопрос">Вопрос</option>
             </select>
             <div id="select-arrow"></div>
             <svg id="select-arrow-svg">
             <span class="tip">Выберите цель</span>
           </div>
+      
           <div class="field">
             <input name="Name" placeholder="Имя" type="text" id="name" required />
             <span class="tip">Введите свое имя</span>
@@ -91,15 +91,16 @@
             <span class="tip">Введите свой Email</span>
           </div>
           <div class="field">
-            <textarea name="Massage" placeholder="Текст" id="message" required /></textarea>
-            <span class="tip">Введите здесь свое обращение</span>
+            <textarea name="Message" placeholder="Сообщение" id="message" required /></textarea>
+            <span class="tip">Ваш текст</span>
           </div>
+          <input type="hidden" name="_language" value="ru" />
+          <input type="hidden" name="_next" value="https://www.google.com.ua/?hl=ru" />
+                    <input type="hidden" name="_subject" value="Новый отклик!" />
           <input type="submit" value="Send" class="send" form="contact" />
           <input type="reset" value="&#8226; Reset form" class="reset">
-                <input type="hidden" name="_next" value="http://ruslanfedotov.ho.ua/submit_page.html" />
-                <input type="hidden" name="_subject" value="Новый отклик!" />
 
-        </form>
+        
       </div>
     </section>
   </div>
